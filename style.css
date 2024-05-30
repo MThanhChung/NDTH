@@ -3,20 +3,18 @@ margin-left: 0;
 margin-right:0 ;
 box-sizing: border-box;
 }
-header{
-width: 100%;
-height: 150px;
-border: 2px solid red;
-top: 0;
-position: sticky;
-
-}
-div.back{
-    width: 50px;
-    height: 50px;
-    border: 2px solid red;
-    display: inline-table;
-    float: right;
-    margin-right: 40px;
-    
-}
+#back {
+    display: flex; /* Bật bố cục flexbox cho div #back */
+    flex-direction: row; /* Sắp xếp các div con theo hàng ngang */
+    justify-content: space-around; /* Phân bố khoảng trống đều giữa các div con */
+    align-items: center; /* Căn chỉnh các div con theo chiều dọc */
+    flex-wrap: wrap; /* Cho phép các div con tự động xuống hàng khi cần thiết */
+  }
+  
+  .back {
+    flex: 1 0 auto; /* Phân bố không gian đều cho các div con */
+    text-align: center; /* Căn chỉnh văn bản bên trong div con theo chiều ngang */
+    padding: 10px; /* Thêm đệm xung quanh nội dung trong div con */
+    border: 1px solid #ccc; /* Thêm đường viền cho div con */
+  }
+  
